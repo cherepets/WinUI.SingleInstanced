@@ -1,5 +1,7 @@
 # WinUI.SingleInstanced
 
+[![Build](https://github.com/cherepets/WinUI.SingleInstanced/actions/workflows/build.yml/badge.svg)](https://github.com/cherepets/WinUI.SingleInstanced/actions/workflows/build.yml)
+
 Zero-setup single instancing for WinUI 3 applications.
 Based on article: [Making the app single-instanced](https://blogs.windows.com/windowsdeveloper/2022/01/28/making-the-app-single-instanced-part-3/) by Jingwei Zhang.
 
