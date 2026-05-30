@@ -1,0 +1,4 @@
+<Solution>
+  <Project Path="WinUI.SingleInstanced.SourceGenerator/WinUI.SingleInstanced.SourceGenerator.csproj" />
+  <Project Path="WinUI.SingleInstanced/WinUI.SingleInstanced.csproj" />
+</Solution>

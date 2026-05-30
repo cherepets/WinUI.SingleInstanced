@@ -1,0 +1,45 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFramework>net10.0-windows10.0.26100.0</TargetFramework>
+		<Nullable>enable</Nullable>
+		<LangVersion>latest</LangVersion>
+		
+		<GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+		<PackageId>WinUI.SingleInstanced</PackageId>
+		<Version>1.0.0</Version>
+		<Authors>cherepets</Authors>
+		<Description>Zero-setup single instancing for WinUI 3 applications.</Description>
+		<PackageTags>winui;winui3;windowsappsdk;single-instanced;source-generator;desktop</PackageTags>
+		<PackageProjectUrl>https://github.com/cherepets/WinUI.SingleInstanced</PackageProjectUrl>
+		<PackageIcon>icon.png</PackageIcon>
+		<RepositoryUrl>https://github.com/cherepets/WinUI.SingleInstanced</RepositoryUrl>
+		<RepositoryType>git</RepositoryType>
+		<PackageReadmeFile>README.md</PackageReadmeFile>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<PackageReference Include="Microsoft.Windows.SDK.BuildTools" Version="10.0.26100.6584" />
+		<PackageReference Include="Microsoft.WindowsAppSDK" Version="1.8.260101001" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<Content Remove="assets\icon.png" />
+		<ProjectReference Include="..\WinUI.SingleInstanced.SourceGenerator\WinUI.SingleInstanced.SourceGenerator.csproj"
+						  ReferenceOutputAssembly="false"
+						  PrivateAssets="all" />
+		<None Include="..\WinUI.SingleInstanced.SourceGenerator\bin\$(Configuration)\netstandard2.0\WinUI.SingleInstanced.SourceGenerator.dll"
+			  Pack="true"
+			  PackagePath="analyzers\dotnet\cs\"
+			  Visible="false" />
+		<None Include="WinUI.SingleInstanced.targets"
+			  Pack="true"
+			  PackagePath="build\;buildTransitive\" />
+		<None Update="README.md"
+			  Pack="true"
+			  PackagePath="\" />
+		<None Include="assets\icon.png"
+			  Pack="true"
+			  PackagePath="\" />
+	</ItemGroup>
+</Project>
