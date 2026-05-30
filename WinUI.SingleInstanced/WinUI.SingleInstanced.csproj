@@ -7,7 +7,7 @@
 		
 		<GeneratePackageOnBuild>true</GeneratePackageOnBuild>
 		<PackageId>WinUI.SingleInstanced</PackageId>
-		<Version>1.0.0</Version>
+		<Version>1.0.1</Version>
 		<Authors>cherepets</Authors>
 		<Description>Zero-setup single instancing for WinUI 3 applications.</Description>
 		<PackageTags>winui;winui3;windowsappsdk;single-instanced;source-generator;desktop</PackageTags>
