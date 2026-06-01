@@ -33,3 +33,6 @@ public partial class App
 
 Package installation adds .target file to disable generation of default Main() method.
 Source generator creates Program.cs with Main() method that handles the activation.
+
+## Used by
+[Authi](https://github.com/cherepets/Authi-OSS)
